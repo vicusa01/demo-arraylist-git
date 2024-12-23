@@ -14,15 +14,7 @@ public class Main {
         System.out.println(cities);
         cities.set(2, "Saratov");
         System.out.println(cities);
-
-        int maxLength = cities.get(0).length();
-        String cityWithMaxLength = cities.get(0);
-        for (String city : cities) {
-            if (city.length() > maxLength) {
-                cityWithMaxLength = city;
-                maxLength = cityWithMaxLength.length();
-            }
-        }
+        String cityWithMaxLength = Util.cityWithMaxLength(cities);
         System.out.println(cityWithMaxLength);
     }
 }
