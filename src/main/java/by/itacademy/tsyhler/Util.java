@@ -26,4 +26,13 @@ public class Util {
         }
         return cityWithMinLength;
     }
+
+    static public String cityStartsWithLetter(ArrayList<String> cities,char firstLetter){
+        for (String city : cities) {
+            if (city.toLowerCase().charAt(0) == firstLetter||city.charAt(0) == firstLetter) {
+                return city;
+            }
+        }
+        return "";
+    }
 }
