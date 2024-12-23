@@ -12,6 +12,17 @@ public class Main {
         cities.add("Dubai");
         cities.add("Phuket");
         System.out.println(cities);
-        cities.set(2,"Saratov");
+        cities.set(2, "Saratov");
+        System.out.println(cities);
+
+        int maxLength = cities.get(0).length();
+        String cityWithMaxLength = cities.get(0);
+        for (String city : cities) {
+            if (city.length() > maxLength) {
+                cityWithMaxLength = city;
+                maxLength = cityWithMaxLength.length();
+            }
+        }
+        System.out.println(cityWithMaxLength);
     }
 }
