@@ -16,5 +16,6 @@ public class Main {
         System.out.println(cities);
         String cityWithMaxLength = Util.cityWithMaxLength(cities);
         System.out.println(cityWithMaxLength);
+        System.out.println(Util.cityWithMinLength(cities));
     }
 }
