@@ -12,5 +12,6 @@ public class Main {
         cities.add("Dubai");
         cities.add("Phuket");
         System.out.println(cities);
+        cities.set(2,"Saratov");
     }
 }
